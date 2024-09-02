@@ -3,7 +3,6 @@ import { PrismaClient } from '@prisma/client/edge'
 import { withAccelerate } from '@prisma/extension-accelerate'
 import { Jwt } from 'hono/utils/jwt';
 import { sign,verify } from 'hono/jwt';
-import User
 import { userRouter } from './routes/user';
 import { blogRouter } from './routes/blogs';
 
