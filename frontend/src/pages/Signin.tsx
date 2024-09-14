@@ -1,5 +1,6 @@
 import { Auth } from "../components/Auth"
 import { Quote } from "../components/Quote"
+import { SigninAuth } from "../components/SigninAuth"
 
 export const Signin = ()=>{
     return (
@@ -7,7 +8,7 @@ export const Signin = ()=>{
          <div>
         <div className="grid grid-cols-1 lg:grid-cols-2">
         <div>
-            <Auth type={"signin"}/>
+            <SigninAuth type={"signin"} />
         </div>
 
         <div className="visible lg:block">
