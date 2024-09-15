@@ -39,13 +39,12 @@ export const Auth = ({ type }: { type: "signup" | "signin" }) => {
                 <div className="p-5 border-2 rounded-2xl shadow-lg">
                     <AuthHeader type={type}/>
                     <div className="pt-2">
-                        {type === "signup"?
                         <LabelledInput label="Name" placeholder="Subham Mallik...." onChange={(e) => {
                             setPostInputs(c => ({
                                 ...c,
                                 name: e.target.value
                             }))
-                        }} /> : null}
+                        }} /> 
                         <LabelledInput label="EmailId" placeholder="subhammallik223@gmail.com...." onChange={(e) => {
                             setPostInputs(c => ({
                                 ...c,
