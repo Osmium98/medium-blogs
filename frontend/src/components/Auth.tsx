@@ -1,6 +1,6 @@
 import { SignupInput } from "@subhammallik/medium-common";
-import { ChangeEvent, useState } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { BACKEND_URL } from "../config";
 import { AuthHeader } from "./Authheader";

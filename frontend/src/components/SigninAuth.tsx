@@ -18,7 +18,7 @@ export const SigninAuth = ({ type }: { type: "signup" | "signin" }) => {
     async function sendRequest(){
         try {
             
-            const response = await axios.post(`${BACKEND_URL}/api/v1/user/signin}`,postInput)
+            const response = await axios.post(`${BACKEND_URL}/api/v1/user/signin`,postInput)
             const jwt = response.data;
             const jwt_token = "Bearer "+ jwt.jwt;
             localStorage.setItem("token",jwt_token);
