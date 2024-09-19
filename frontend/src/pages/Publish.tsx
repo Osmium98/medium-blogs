@@ -13,7 +13,7 @@ export const Publish = () => {
     const navigate = useNavigate();
     return (
         <div>
-            <Appbar />
+            <Appbar showButton={false} />
 
 
             <div className="flex justify-center w-full pt-8">
