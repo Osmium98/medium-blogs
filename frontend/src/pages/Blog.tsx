@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { FullBlog } from "../components/FullBlog";
 import { useBlog } from "../hooks";
-import { SingleBlogSkeleton } from "../components/BlogSkeleton";
+// import { SingleBlogSkeleton } from "../components/BlogSkeleton";
 import { Spinner } from "../components/Spinner";
 
 export const Blog=()=>{
@@ -17,6 +17,10 @@ export const Blog=()=>{
 {/* <SingleBlogSkeleton/> */}
             </div>
         )
+    }
+
+    if (!blog) {
+        return <div>No blog found.</div>;
     }
     return (<>
     <div>
